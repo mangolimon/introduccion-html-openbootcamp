@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--Jumbotron + Modal-->
+    <div class="container  pb-5">
+        <div class="bg-light p-5 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Mi Jumbotron <span class="badge bg-secondary">New!</span></h1>
+                <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis consequuntur quis voluptatibus illum obcaecati, nemo enim sapiente tempora laudantium porro dolorum ab cum, cupiditate deleniti minima eveniet ullam. Ratione.</p>
+                <button 
+                class="btn btn-primary btn-lg"  
+                data-bs-toggle="modal" 
+                data-bs-target="#mi-modal">Ver modal</button>
+            <!--Modal-->   
+                <div class="modal fade" id="mi-modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ModalLabel">Mi primer modal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Este es el contenido de mi modal. 
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="/elementosbs.html"><button type="button" class="btn btn-primary">Aceptar</button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--Fin Modal-->
+            </div>
+    <!--Fin Seccion Jumbotron-->
+
+        </div>
+    <!--Forumulario-->
+        <div class="p-5">
+            <form>
+                <h2 class="mb-3">¡Hablemos!</h2>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Tu Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                    <div class="form-text">Introudce tu nombre de pila.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="999999999" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe aquí tu mensaje." required></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="checkbox" required>
+                    <label class="form-check-label" for="checkbox">Hago check</label>
+                </div>
+                <div class="row">
+                <button type="submit" class="btn btn-primary btn-lg mb-3">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <!--Fin Seccion Formulario-->
+        
+        <!--Tarjeta-->
+        <div class="px-5">
+        <div class="card text-center">
+            <div class="card-header">
+            Esta es mi primera tarjeta
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">Mª Ángeles Gómez</h5>
+            <p class="card-text">Marketera aprendiendo programación.</p>
+            </div>
+            <div class="card-footer">
+            <a href="mailto:mi@email.com"><i class="bi bi-envelope"></i>mi@email.com</a>
+            </div>
+        </div>
+        </div>
+        <!--Fin Seccion Tarjeta-->        
+        </div>
+    </div>
+        
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>
